@@ -5,10 +5,10 @@ services:
     ports:
     - "8080-8082:8080"
     volumes:
-    - "/mnt/dev:/usr/local/tomcat/webapps"
+    - "/mnt/dev/war:/usr/local/tomcat/webapps"
   qa:
     image: 'tomcat:9'
     ports:
     - "8083-8085:8080"
     volumes:
-    - "/mnt/qa:/usr/local/tomcat/webapps"
+    - "/mnt/qa/war:/usr/local/tomcat/webapps"
